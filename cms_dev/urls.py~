@@ -1,5 +1,4 @@
 from django.conf.urls.defaults import *
-from cms_dev.views import hello
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -15,7 +14,4 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
-    
-    ('^hello/$', hello),
-    
 )

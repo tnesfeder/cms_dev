@@ -21,7 +21,7 @@ DATABASE_PORT = ''             # Set to empty string for default. Not used with 
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -65,11 +65,7 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'cms_dev.urls'
 
-import os.path
-
-TEMPLATE_DIRS = (
-	os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
-)
+TEMPLATE_DIRS = ('C:/django/cms_dev/templates')
 
 INSTALLED_APPS = (
     'django.contrib.auth',
